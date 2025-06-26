@@ -1,4 +1,4 @@
-# 🚀 Saqib Naeem - Fullstack Developer Portfolio
+# 🚀 Muhammad Saqib - Fullstack Developer Portfolio
 
 A modern, responsive portfolio website showcasing my experience as a fullstack developer specializing in fintech solutions. Built with Angular 18 and featuring a sleek, coding-themed design with interactive animations.
 
@@ -143,4 +143,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ by Saqib Naeem**
+**Built with ❤️ by Muhammad Saqib**
