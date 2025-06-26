@@ -1,0 +1,244 @@
+.recommendations-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #60a5fa;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.recommendation-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.recommendation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.profile-picture {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.profile-img:hover {
+  border-color: rgba(59, 130, 246, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+.recommender-info {
+  flex: 1;
+}
+
+.recommender-name {
+  font-size: 1.3rem;
+  color: #93c5fd;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.recommender-title {
+  font-size: 1rem;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.relationship {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-style: italic;
+  margin: 0;
+}
+
+.linkedin-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.recommendation-content {
+  position: relative;
+}
+
+.recommendation-content::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  font-size: 4rem;
+  color: rgba(59, 130, 246, 0.3);
+  font-family: serif;
+  line-height: 1;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.linkedin-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.linkedin-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #0077b5 0%, #004d7a 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 119, 181, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.linkedin-button::before {
+  content: '💼';
+  margin-right: 0.5rem;
+}
+
+.linkedin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 119, 181, 0.4);
+  background: linear-gradient(135deg, #005885 0%, #003d5c 100%);
+  text-decoration: none;
+  color: white;
+}
+
+.linkedin-button:active {
+  transform: translateY(0);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .recommendation-card {
+    padding: 1.5rem;
+  }
+  
+  .recommendation-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .profile-picture {
+    order: -1;
+  }
+  
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .recommender-info {
+    order: 0;
+  }
+  
+  .linkedin-icon {
+    order: 1;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .recommendations-section {
+    padding: 4rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .linkedin-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

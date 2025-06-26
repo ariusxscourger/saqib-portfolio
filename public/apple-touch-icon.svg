@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="bgGradApple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="30%" style="stop-color:#334155"/>
+      <stop offset="60%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="180" height="180" rx="25" fill="url(#bgGradApple)"/>
+  
+  <!-- Outer glow -->
+  <rect width="176" height="176" x="2" y="2" rx="23" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Code brackets -->
+  <path d="M 45 60 L 35 70 L 35 90 L 45 100 L 35 110 L 35 120 L 45 130" 
+        stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 135 60 L 145 70 L 145 90 L 135 100 L 145 110 L 145 120 L 135 130" 
+        stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Letter S -->
+  <text x="90" y="110" font-family="Arial, sans-serif" font-size="60" font-weight="bold" 
+        text-anchor="middle" fill="url(#textGrad)">S</text>
+  
+  <!-- Decorative code elements -->
+  <circle cx="65" cy="75" r="3" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="115" cy="75" r="3" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="65" cy="115" r="3" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="115" cy="115" r="3" fill="#60a5fa" opacity="0.6"/>
+  
+  <!-- Small code symbols -->
+  <text x="70" y="50" font-family="monospace" font-size="12" fill="#94a3b8" opacity="0.7">&lt;/&gt;</text>
+  <text x="100" y="50" font-family="monospace" font-size="12" fill="#94a3b8" opacity="0.7">{ }</text>
+  <text x="70" y="145" font-family="monospace" font-size="12" fill="#94a3b8" opacity="0.7">()=></text>
+  <text x="105" y="145" font-family="monospace" font-size="12" fill="#94a3b8" opacity="0.7">===</text>
+</svg>

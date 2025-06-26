@@ -1,0 +1,36 @@
+{
+  "name": "Muhammad Saqib - Software Developer Portfolio",
+  "short_name": "Saqib Portfolio",
+  "description": "Portfolio of Muhammad Saqib - Experienced Software Developer specializing in .NET, C#, SQL, API development, and cloud pipelines",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "favicon-32x32.svg", 
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "fintech", "software"],
+  "lang": "en",
+  "dir": "ltr"
+}

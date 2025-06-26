@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" fill="#1e293b" rx="4"/>
+  <rect x="2" y="2" width="28" height="28" fill="#0f172a" rx="3" stroke="#3b82f6" stroke-width="0.5"/>
+  
+  <!-- Code brackets -->
+  <text x="6" y="20" fill="#3b82f6" font-family="monospace" font-size="12" font-weight="bold">&lt;/&gt;</text>
+  
+  <!-- Terminal cursor -->
+  <rect x="20" y="14" width="8" height="2" fill="#22c55e" rx="1">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Code dots -->
+  <circle cx="8" cy="10" r="1.5" fill="#8b5cf6"/>
+  <circle cx="12" cy="10" r="1.5" fill="#06b6d4"/>
+  <circle cx="16" cy="10" r="1.5" fill="#f59e0b"/>
+</svg>

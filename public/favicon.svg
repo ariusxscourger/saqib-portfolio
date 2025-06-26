@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="code" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bg)" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Code brackets -->
+  <path d="M 25 30 L 20 35 L 20 45 L 25 50 L 20 55 L 20 65 L 25 70" 
+        stroke="url(#code)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 75 30 L 80 35 L 80 45 L 75 50 L 80 55 L 80 65 L 75 70" 
+        stroke="url(#code)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Center symbol (S for Saqib) -->
+  <text x="50" y="58" font-family="Arial, sans-serif" font-size="32" font-weight="bold" 
+        text-anchor="middle" fill="url(#code)">S</text>
+  
+  <!-- Small dots for decoration -->
+  <circle cx="35" cy="40" r="1.5" fill="#60a5fa" opacity="0.7"/>
+  <circle cx="65" cy="40" r="1.5" fill="#60a5fa" opacity="0.7"/>
+  <circle cx="35" cy="60" r="1.5" fill="#60a5fa" opacity="0.7"/>
+  <circle cx="65" cy="60" r="1.5" fill="#60a5fa" opacity="0.7"/>
+</svg>
